@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { VOCABULARY_DATABASE } from '@/data/content';
 import { useAppStore } from '@/store/useAppStore';
-import { Volume2, Check, BookOpen, Filter } from 'lucide-react';
+import { Volume2, Check, Filter } from 'lucide-react';
 
 export default function Vocabulary() {
   const { level } = useParams<{ level: string }>();

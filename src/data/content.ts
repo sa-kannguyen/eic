@@ -15365,22 +15365,6 @@ export interface Part7Passage {
   }[];
 }
 
-// Part 6: Text Completion (4 questions per passage)
-interface Part6Passage {
-  id: string;
-  level: 'beginner' | 'intermediate' | 'advanced';
-  category: string;
-  passage: string;
-  questions: {
-    id: string;
-    position: number; // Position in the passage where the blank is
-    type: 'grammar' | 'vocabulary' | 'sentence'; // Type of question
-    options: string[];
-    correctAnswer: number;
-    explanation: string;
-  }[];
-}
-
 export const PART7_DATABASE: Part7Passage[] = [
   // === BEGINNER LEVEL - SINGLE PASSAGES (15 passages) ===
   {
