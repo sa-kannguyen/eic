@@ -17,7 +17,7 @@ import Progress from './pages/Progress';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/eic">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Navigate to="/dashboard" replace />} />
