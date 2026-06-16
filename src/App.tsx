@@ -10,6 +10,7 @@ import Practice from './pages/Practice';
 import Part1Practice from './pages/Part1Practice';
 import Part5Practice from './pages/Part5Practice';
 import Part7Practice from './pages/Part7Practice';
+import Reading from './pages/Reading';
 import StudyPlans from './pages/StudyPlans';
 import TipsStrategies from './pages/TipsStrategies';
 import Test from './pages/Test';
@@ -31,6 +32,7 @@ function App() {
           <Route path="practice/part1/:level" element={<Part1Practice />} />
           <Route path="practice/part5" element={<Part5Practice />} />
           <Route path="practice/part7" element={<Part7Practice />} />
+          <Route path="reading" element={<Reading />} />
           <Route path="study-plans" element={<StudyPlans />} />
           <Route path="tips-strategies" element={<TipsStrategies />} />
           <Route path="test/:level" element={<Test />} />

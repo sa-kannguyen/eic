@@ -111,3 +111,24 @@ export interface Part1Question {
   explanation: string;
   category: 'person' | 'object' | 'scene' | 'action';
 }
+
+export interface ReadingPassage {
+  id: string;
+  level: ToeicLevel;
+  topic: string;
+  title: string;
+  titleVi: string;
+  content: string;
+  translation: string;
+  vocabulary: {
+    word: string;
+    meaning: string;
+  }[];
+  questions: {
+    id: string;
+    question: string;
+    options: string[];
+    correctAnswer: number;
+    explanation: string;
+  }[];
+}
